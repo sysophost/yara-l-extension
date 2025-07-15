@@ -4,26 +4,34 @@
   "version": "1.0.2",
   "publisher": "GoogleCloudSecurity",
   "description": "Provides syntax highlighting, bracket matching, and folding in YARA-L files.",
-  "categories": ["Programming Languages"],
+  "categories": [
+    "Programming Languages"
+  ],
   "contributes": {
-    "themes": [
+    "grammars": [
       {
-        "label": "YARA-L Theme",
-        "uiTheme": "vs-dark",
-        "path": "./themes/yara-l-theme-color-theme.json"
+        "language": "yara-l",
+        "path": "./syntaxes/yara-l.tmLanguage.json",
+        "scopeName": "source.yara-l"
       }
     ],
-    "grammars": [{
-      "language": "yara-l",
-      "path": "./syntaxes/yara-l.tmLanguage.json",
-      "scopeName": "source.yara-l"
-    }],
-    "languages": [{
-      "id": "yara-l",
-      "aliases": ["YARA-L", "yara-l", "YARAL", "yaral", "yl2"],
-      "configuration": "./language-configuration.json",
-      "extensions": [".yaral", ".yl2"]
-    }],
+    "languages": [
+      {
+        "id": "yara-l",
+        "aliases": [
+          "YARA-L",
+          "yara-l",
+          "YARAL",
+          "yaral",
+          "yl2"
+        ],
+        "configuration": "./language-configuration.json",
+        "extensions": [
+          ".yaral",
+          ".yl2"
+        ]
+      }
+    ],
     "configuration": {
       "title": "YARA-L Theme Customizations",
       "properties": {
@@ -44,7 +52,12 @@
     "vscode": "^1.8.0"
   },
   "license": "Apache License, Version 2.0",
-  "keywords": ["Chronicle", "YARA-L", "YARAL", "yl2"],
+  "keywords": [
+    "Chronicle",
+    "YARA-L",
+    "YARAL",
+    "yl2"
+  ],
   "bugs": {
     "url": "https://github.com/chronicle/yara-l-extension/issues"
   },
