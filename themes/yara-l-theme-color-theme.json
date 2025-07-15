@@ -27,16 +27,18 @@
     {
       "scope": "constant.numeric.yara-l",
       "settings": {
-       "foreground": "#b8cba9"
+        "foreground": "#b8cba9"
       }
     },
     {
-      "scope": ["keyword.other.unit.yara-l", "constant.language.today.yara-l"],
+      "scope": [
+        "keyword.other.unit.yara-l",
+        "constant.language.today.yara-l"
+      ],
       "settings": {
-       "foreground": "#b8cba9"
+        "foreground": "#b8cba9"
       }
     },
-    
     {
       "scope": "constant.language.yara-l",
       "settings": {
